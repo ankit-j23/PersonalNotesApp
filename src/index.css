@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+i{
+  cursor: pointer;
+}
+
+.containerp{
+  display: inline-block;
+  justify-content: center;
+}
+
+.containerc p{
+  font-family: monospace;
+  font-size: 1.5rem;
+  margin-inline: auto;
+  overflow: hidden;
+  /* keeps on a straight line */
+  white-space: nowrap;
+  /* The cursor */
+  /* border-right: 1px solid; */
+  animation: typing 3s forwards;
+}
+
+@keyframes typing{
+  from {
+    width : 0;
+  }
+  to{
+    width : 100%;
+  }
+}
