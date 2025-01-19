@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# Personal Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple and intuitive web application designed to help you organize your thoughts, tasks, and ideas effectively and securely.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Create Notes**: Create notes with ease to organize your thoughts , ideas etc.
+- **Maintain**: Edit the note when needed and delete them.
+- **Organize**: Organize notes by proper categories and tags.
+- **Secure**: Secure signup and login and your personal notes.
+- **Responsive design**: The web-application is responsive for seamless use across devices and all kind of screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend**: React.js , CSS
+- **Backend**: Node.js, Express.js
+- **State Management**: Context API and Redux
+- **Database**: MongoDB and Local Storage
+- **Authentication**: JWT Web-Token for authentication
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v16 or higher)
+- MongoDB (local or cloud instance)
+- npm
+- Git
+- A code editor like
+- A modern web browser
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Follow the steps below to set up and run the project locally.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/ankit-j23/PersonalNotesApp.git
+   cd PersonalNotesApp
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 2. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Backend
 
-## Learn More
+Navigate to the `server` directory and install the dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd backend
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Frontend
+Navigate to the `client` directory and install the dependencies:
 
-### Code Splitting
+```bash
+cd ../mynotebook
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Start the Application
 
-### Analyzing the Bundle Size
+#### Backend
+Start the server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd backend
+npm start
+```
 
-### Making a Progressive Web App
+#### Frontend
+Start the client:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+cd ../mynotebook
+npm start
+```
 
-### Advanced Configuration
+### Both Concurrently
+```bash
+npm both
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 4. Open your browser and navigate to:
 
-### Deployment
+ ```
+ http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Register a new account or log in with an existing one.
+3. Add the notes using the given form on the web-page.
+4. Edit or delete and do different functions using the buttons provided.
+
+---
+
+## Folder Structure
+
+/client       - React frontend
+/server       - Node.js backend
+README.md     - Project documentation
+
+---
+
+## Troubleshooting
+
+- **User not authenticated**: Ensure the JWT token is being stored in `localStorage` and included in API requests.
+- **Database connection error**: Verify your MongoDB instance is running and the `MONGO_URI` is correct.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Contributing
+
+- Ankit Kumar
+
+---
